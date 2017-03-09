@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "aldo";
+	src: url("font/aldo.ttf") format("truetype");
+}
+
+p{
+	font-family: "aldo", arial;
+}
+
+@font-face {
+	font-family: "allerbold";
+	src: url("font/allerbold.ttf") format("truetype");
+}
+
+span {
+	font-family: "allerbold", cursive;
+}
+
+
