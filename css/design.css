@@ -31,7 +31,7 @@ header nav .ioMenuMovil img {
 }
 
 header nav #card_menu {
-    
+    display: none;
     position: relative;
     width: 230px;
     background: white;
