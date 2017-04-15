@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- V V -->
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
@@ -15,23 +16,27 @@
 
 </head>
 <body>
+
+
 	<header>
-        <h1>
-                <a href="index.html">
-        	<figure><img src="img/lugli-logo.png" alt=""></figure></a>
-        	<a href="index.html">Sonia Carretero</a></h1>
+     <h1>
+      <a href="index.html">
+        <figure id="logo"><img src="img/lugli-logo.png" alt=""></figure></a>
 
-        <nav id="ioMenu">
-                <figure id="showMenu" class="ioMenuMovil" onClick="displayMenu()"> <img src="img/menu.png" alt="">
+      <a href="index.html">Sonia Carretero</a></h1>
+         
+    <nav id="ioMenu">
+    <figure id="showMovil" class="ioMenuMovil" onClick="displayMenu()"> <img src="img/menu.png" alt="">
                 </figure>
 
-                <div id="card_menu">
-                <figure id="hideMenu" class="ioMenuMovil" onClick="displayMenu()"> <img src="img/exit.png" alt=""> </figure>
+
+    <div id="card_menu">
+        <figure id="hideMenu" class="ioMenuMovil" onClick="displayMenu()"> <img src="img/exit.png" alt=""> </figure>
                 
-                <figure id="logo_menu"> <img src="img/logo.png" alt="">
+        <figure id="logo_menu"> <img src="img/logo.png" alt="">
                 </figure>
                 
-                 <ul>
+            <ul>
                  <li> <a href="#">Home</a></li>
                  <li> <a href="#">Sobre mi</a></li>
                  <li> <a href="#">Skills</a></li>
@@ -45,17 +50,17 @@
                 
         </nav>
 
-        	<div id="prev_section">
+
+    <div id="prev_section" onClick="displaySection('prev')">
         		<img src="iconos/icon-08.png" alt="">
         	</div>
-                <div id="next_section"><img src="iconos/icon-08.png" alt="">
+    <div id="next_section" onClick="displaySection('next')"><img src="iconos/icon-08.png" alt="">
                         
-                </div>
+    </div>
 
-			
-	</header>
+		</header>
 
-        <script>
+ <script type="text/javascript">
         alertSize();
         function alertSize() {
         
@@ -73,34 +78,36 @@
     myWidth = document.body.clientWidth;
     myHeight = document.body.clientHeight;
   }
-    var display;
-    var card_menu= document.getElementById("card_menu");
-                display = card_menu.style.display;
+
+    
+    var menu= document.getElementById("card_menu");
+    var display = menu.style.display;
         if (myWidth < 767) {
-            card_menu.style.display = "none";
+            menu.style.display = "none";
 
         else {
-                card_menu.style.display = "block";
+                menu.style.display = "block";
         }   
         
 
 }
 
-         function displayMenu () {
-                var display;
-                var card_menu= document.getElementById("card_menu");
-                display = card_menu.style.display;
+  function displayMenu () {
+      var display;
+      var start, end;
+      var menu= document.getElementById("card_menu");
+      var display = menu.style.display;
 
-                if (display="none") {
-                        card_menu.style.display="block";
+          if (display="none") {
+                        menu.style.display="block";
                 }
-                else {
-                      card_menu.style.display="none";  
+          else {
+               menu.style.display="none";  
                 }
          }
 
 
-        </script>
+  </script>
 
 <p><span class="\e916"></span>Frase como ejemplo</p>
 

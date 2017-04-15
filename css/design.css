@@ -5,11 +5,11 @@ body {
     position: relative;
 
 }
-
+/* V  */
 header{
-    width: 100%;
     height: 35px;
     background: brown;
+    width: 100%;
     position: relative;
 }
 
@@ -17,37 +17,64 @@ header h1 {
     display: none;
 }
 
-header nav .ioMenuMovil {
+header #prev_section,      /* ver */
+header #next_section {
+    width: 25px;
     height: 25px;
-    width: 120px;
+    margin: 5px;
+    position: absolute;
+    top: 0px;
     cursor: pointer;
+    overflow: hidden;
+    }
+
+header #prev_section {
+    right: 35px;
+}
+header #next_section {
+    right: 5px;
+}
+header #prev_section img,
+header #next_section img {
+    width: 250%;
+    top: -19px;
+    left: -19px;
+    position: relative;
+}
+header #next_section img {
+    transform: rotate(180deg);     /* ver */
+}
+header nav .ioMenuMovil {     /* aqui */
     line-height: 40px;
+    height: 25px;
     margin: 0px 0px 0px 10px;
+    cursor: pointer;
+    width: 120px;
     padding-top: 5px;
 }
-    
-header nav .ioMenuMovil img {
+    header nav .ioMenuMovil img {
     height: 100%;
 }
 
 header nav #card_menu {
-    display: none;
     position: relative;
+    height: 100%;
     width: 230px;
     background: white;
     top: -30px;
     left: 0px;
     border-right: 3px solid #afaeae;
+    display: block;
     z-index: 999;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 header nav #card_menu #logo_menu {
-    
     height: 200px;
-    width: 80%;
     margin: 30px 0px;
+    width: 80%;
     margin-left: 10%;
+    text-align: center;
     margin-bottom: 50px; 
 }
 
@@ -56,7 +83,6 @@ header nav #card_menu #logo_menu img {
 }
 
 header nav #card_menu ul {
-    
     margin-top: -20px; 
 }
 header nav #card_menu ul li {
@@ -64,42 +90,14 @@ header nav #card_menu ul li {
     font-size: 1.5em;
     line-height: 37px;
 }
-header nav #card_menu ul li a {
+header nav #card_menu ul li a {   /* aqui */
     text-decoration: none;
     color: black;
 
 }
 
-header #prev_section,
-header #next_section {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    margin: 5px;
-    position: absolute;
-    top: 0px;
-    overflow: hidden;
-    }
 
-header #prev_section {
-    right: 35px;
-}
 
-header #next_section {
-    right: 5px;
-}
-
-header #prev_section img,
-header #next_section img {
-    width: 250%;
-    top: -19px;
-    left: -19px;
-    position: relative;
-}
-
-header #next_section img {
-    transform: rotate(180deg);
-}
 
 
 @media screen and (min-width: 480px) {
@@ -126,18 +124,19 @@ header #next_section img {
      header h1 {
         display: inline-block;
         width: 20%;
+        min-width: 200px;
         margin: 0px;
         height: 50px;
-        margin-left: 80px;
         line-height: 50px;
-        min-width: 200px;
-     }
+        margin-left: 80px;
+    }   
 
      header h1 > * {
         display: inline-block;
         vertical-align: middle;
         text-decoration: none;
         color: white;
+        font-weight: lighter;
         font-size: 0.8em;
         margin: 0px 3px;
      }
@@ -146,8 +145,7 @@ header #next_section img {
         height: 40px;
         width: 40px;
         margin: 0px;
-        
-     }
+    }
 
      header h1 figure img {
         width: 100%;
@@ -161,7 +159,7 @@ header #next_section img {
         
      }
 
-     header nav #showMenu,
+     header nav #showMovil,
      header nav #hideMenu {
         display: none;
      }
@@ -169,11 +167,10 @@ header #next_section img {
      header nav #card_menu {
         display: inline-block;
         border: none;
-        background: none;
         position: relative;
+        background: none;
         top: 0px;
         width: 100%;
-        
         text-align: right;
         padding-bottom: 0px; 
      }
@@ -183,17 +180,16 @@ header #next_section img {
      }
 
      header nav #card_menu ul {
-        padding: 0px;
         margin: 0px;
+        padding: 0px;
         margin-top: -15px;
      }
 
      header nav #card_menu ul li {
         display: inline-block;
         width: 75px;
-       
-        text-align: center;
         font-size: 1em;
+        text-align: center;
         margin: 0px -2px;
      }
 
@@ -205,13 +201,14 @@ header #next_section img {
      header #prev_section,
      header #next_section  {
         position: absolute;
+        border-radius: 50%;
+        right: 40px;
+        background: #29abe2;
         width: 50px;
         height:50px;
-        background: #29abe2;
-        right: 40px;
+        overflow: visible;
         z-index: 999;
-        border-radius: 50%;
-     }
+       }
 
      header #prev_section {
         top: 115px;
