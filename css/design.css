@@ -5,14 +5,13 @@ body {
     position: relative;
 
 }
-/* V  */
+/* V V V Cambio del orden de archivos */
 header{
     height: 35px;
     background: brown;
     width: 100%;
     position: relative;
 }
-
 header h1 {
     display: none;
 }
@@ -93,12 +92,7 @@ header nav #card_menu ul li {
 header nav #card_menu ul li a {   /* aqui */
     text-decoration: none;
     color: black;
-
 }
-
-
-
-
 
 @media screen and (min-width: 480px) {
     body{
@@ -156,8 +150,7 @@ header nav #card_menu ul li a {   /* aqui */
         vertical-align: middle;
         width: 62%;
         position: relative;
-        
-     }
+        }
 
      header nav #showMovil,
      header nav #hideMenu {
@@ -220,8 +213,7 @@ header nav #card_menu ul li a {   /* aqui */
 
      header #prev_section img,
      header #next_section img {
-       
-        width: 100%;
+       width: 100%;
         top: 0px;
         left: 0px;
      }
