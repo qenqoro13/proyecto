@@ -94,6 +94,49 @@ header nav #card_menu ul li a {   /* aqui */
     color: black;
 }
 
+/*Aqui va el slider */
+
+#slider {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    background: black; 
+}
+
+#slider section.slide {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px; 
+}
+
+#slider #home {
+    height: 500px;
+    background: orange;
+}
+
+#slider #aboutme {
+    height: 400px;
+    background: yellow; 
+}
+
+#slider #skills {
+    height: 300px;
+    background: red;
+}
+#slider #portfolio {
+    height: 200px;
+    background: blue;
+}
+#slider #blog {
+    height: 100px;
+    background: purple;
+}
+
+
+
+
+
 @media screen and (min-width: 480px) {
     body{
         background: red;
