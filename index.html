@@ -1,64 +1,62 @@
 <!DOCTYPE html>
-<!-- V V V-->
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Sonia Carretero</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 <script src="js/modernizr-custom.js"></script>
-
 <link rel="stylesheet"  href="css/icomoon.css">
-
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/aldo.css">
 <link rel="stylesheet" href="css/allerbold.css">
 <link rel="stylesheet" href="css/design.css">
 
 </head>
+
 <body>
 
-
 	<header>
-     <h1>
+    <h1>
       <a href="index.html">
         <figure id="logo"><img src="img/lugli-logo.png" alt=""></figure></a>
-
-      <a href="index.html">Sonia Carretero</a></h1>
+      <a href="index.html">Sonia Carretero</a>
+    </h1>
          
     <nav id="ioMenu">
-    <figure id="showMovil" class="ioMenuMovil" onClick="displayMenu()"> <img src="img/menu.png" alt="">
-                </figure>
-
+        <figure id="showMovil" class="ioMenuMovil" onClick="displayMenu()"> 
+          <img src="img/menu.png" alt="">
+        </figure>
 
     <div id="card_menu">
-        <figure id="hideMenu" class="ioMenuMovil" onClick="displayMenu()"> <img src="img/exit.png" alt=""> </figure>
+        <figure id="hideMenu" class="ioMenuMovil" onClick="displayMenu()"> 
+          <img src="img/exit.png" alt=""> 
+        </figure>
                 
-        <figure id="logo_menu"> <img src="img/logo.png" alt="">
-                </figure>
+        <figure id="logo_menu"> 
+          <img src="img/logo.png" alt="">
+        </figure>
                 
-            <ul>
-                 <li> <a href="#">Home</a></li>
-                 <li> <a href="#">Sobre mi</a></li>
-                 <li> <a href="#">Skills</a></li>
-                 <li> <a href="#">Portfolio</a></li>
-                 <li> <a href="#">Blog</a></li>
-                 <li> <a href="#">Contacto</a></li>
-
-                 </ul>       
-                        
-                </div>
-                
-        </nav>
-
+        <ul>
+          <li> <a onclick="navSection('home')" href="#">Home</a></li>
+          <li> <a onclick="navSection('aboutme')" href="#">Sobre mi</a></li>
+          <li> <a onclick="navSection('skills')" href="#">Skills</a></li>
+          <li> <a onclick="navSection('portfolio')" href="#">Portfolio</a></li>
+          <li> <a onclick="navSection('blog')" href="#">Blog</a></li>
+          <li> <a href="#">Contacto</a></li>
+        </ul>
+    </div>                
+    </nav>
 
     <div id="prev_section" onClick="displaySection('prev')">
-        		<img src="iconos/icon-08.png" alt="">
-        	</div>
-    <div id="next_section" onClick="displaySection('next')"><img src="iconos/icon-08.png" alt="">
-                        
+  		<img src="iconos/icon-08.png" alt="">
+  	</div>
+
+    <div id="next_section" onClick="displaySection('next')">
+      <img src="iconos/icon-08.png" alt="">                        
     </div>
 
-		</header>
+	</header>
 
 <!--Aqui va el slider  -->  
 <div id= "slider">
@@ -67,13 +65,21 @@
   <section class="slide" id="skills" style="display:none"></section>
   <section class="slide" id="portfolio" style="display:none"></section>
   <section class="slide" id="blog" style="display:none"></section>
-
  </div>
 
-
 <script type="text/javascript">
-        alertSize();
-        function alertSize() {
+
+    var sections = new Array (5);
+
+    sections [0] ="home";
+    sections [1] ="aboutme";
+    sections [2] ="skills";
+    sections [3] ="portfolio";
+    sections [4] ="blog";
+
+    alertSize();
+        
+  function alertSize() {
         
   var myWidth = 0, myHeight = 0;
   if( typeof( window.innerWidth ) == 'number' ) {
@@ -89,7 +95,6 @@
     myWidth = document.body.clientWidth;
     myHeight = document.body.clientHeight;
   }
-
 }
 
   function displayMenu () {
@@ -98,28 +103,59 @@
       var menu= document.getElementById("card_menu");
       var display = menu.style.display;
 
-          if (display=="none") {
-              menu.style.display="block";
-                }
-          else {
-               menu.style.display="none";  
-                }
-         }
+      if (display=="none" || display=="" ) {
+         menu.style.display="block";
+        }
+      else {
+         menu.style.display="none";  
+        }
+      }
+
+
+   function setColors(i) {
+
+      var search;
+      var bkgr_body;
+      var bkgr_menu;
+
+    if (sections[i] == "home") {
+        bkgr_body = "#233D58";
+        bkgr_menu = "#233D58";
+      }
+      else {
+        bkgr_body = "#f1f1f1";
+        bkgr_menu = "#29abe2";
+      }
+      search = document.getElementById(sections[i]);
+      search.style.background = bkgr_body;
+      var menu = document.getElementsByTagName("header")[0];
+      menu.style.background = bkgr_menu;
+
+   }
+
+   function navSection(nav){     
+
+      var search;
+      var show;      
+
+      for (var i=0; i<5; i++) {
+      search = document.getElementById(sections[i]);
+      search.style.display = "none";
+
+      if (sections [i] == nav) {
+        search.style.display = "block";
+        setColors(i); 
+
+          } 
+        }
+      }
 
        function displaySection(nav) {
-        
-        var sections = new Array(5);
-        sections [0] ="home";
-        sections [1] ="aboutme";
-        sections [2] ="skills";
-        sections [3] ="portfolio";
-        sections [4] ="blog";
 
         var search;
         var show;
 
         for (var i=0; i<5; i++) {
-
 
         search = document.getElementById(sections[i]);
         show = search.style.display;
@@ -138,22 +174,13 @@
         search = document.getElementById(sections[i]);
         search.style.display = "block";
         break;
-      }
-    }
+          }
+        }
+     
+   
+   setColors(i);
 
-    if (sections[i] == "home"){
-      bkgr_body = "#233D58"
-      bkgr_menu = "#233D58"
-    }
-    else{
-      bkgr_body = "#f1f1f1"
-      bkgr_menu = "#29abe2"
-    }
-    search.style.background = bkgr_body;
-    var menu = document.getElementsByTagName("header")[0];
-    menu.style.background = bkgr_menu;
-
-  }
+ }
 
       //  if (sections[i]=="home") {
       //   bkgr_body = "#233D58";
