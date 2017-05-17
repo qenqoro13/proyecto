@@ -65,7 +65,35 @@
   <section class="slide" id="skills" style="display:none"></section>
   <section class="slide" id="portfolio" style="display:none"></section>
   <section class="slide" id="blog" style="display:none"></section>
- </div>
+ </div
+
+<div id= "contact_form">
+  <form action= "contact_php" id="form1" name= "form1" 
+   method = "post">
+
+  <div id= "close_form"> </div>
+  <figure id= "logo_mensaje"> <img src= "iconos/mail.png" 
+   alt= ""> </figure>
+   <p> Di Hola</>
+
+   <input type= "text" id="name" name="name" placeholder=
+    "Tu nombre" onfocus="if (this.placeholder= '') this. 
+    placeholder ='Tu nombre'"/>
+
+   <input type= "text" id="email" name="email" placeholder=
+    "Tu email" onfocus="if (this.placeholder= '') this. 
+    placeholder ='Tu email'"/>
+
+
+   <textarea name="message" id="message" placeholder="Mensaje" onfocus="if(this.placeholder='')This.placeholder='Men
+   saje'"></textarea> 
+
+  <input type= "submit" name="Submit" id= "button"
+   value= "ENVIAR"/>
+ </form>
+</div>
+
+
 
 <script type="text/javascript">
 
@@ -175,11 +203,8 @@
         search.style.display = "block";
         break;
           }
-        }
-     
-   
+        }   
    setColors(i);
-
  }
 
       //  if (sections[i]=="home") {
