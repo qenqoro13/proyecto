@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('css/icomoon.eot?81s1tn');
-  src:  url('css/icomoon.eot?81s1tn#iefix') format('embedded-opentype'),
-    url('css/icomoon.ttf?81s1tn') format('truetype'),
-    url('css/icomoon.woff?81s1tn') format('woff'),
-    url('css/icomoon.svg?81s1tn#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?flcbyq');
+  src:  url('fonts/icomoon.eot?flcbyq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?flcbyq') format('truetype'),
+    url('fonts/icomoon.woff?flcbyq') format('woff'),
+    url('fonts/icomoon.svg?flcbyq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,49 +24,102 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home3:before {
-  content: "\e902";
+.icon-plus:before {
+  content: "\f067";
 }
-.icon-pencil:before {
-  content: "\e905";
+.icon-envelope-o:before {
+  content: "\f003";
 }
-.icon-camera:before {
-  content: "\e90f";
+.icon-close:before {
+  content: "\f00d";
 }
-.icon-music:before {
-  content: "\e911";
+.icon-remove:before {
+  content: "\f00d";
 }
-.icon-pacman:before {
-  content: "\e916";
+.icon-times:before {
+  content: "\f00d";
 }
-.icon-clock2:before {
-  content: "\e94f";
+.icon-qrcode:before {
+  content: "\f029";
 }
-.icon-glass2:before {
-  content: "\e9a1";
+.icon-image:before {
+  content: "\f03e";
 }
-.icon-spoon-knife:before {
-  content: "\e9a3";
+.icon-photo:before {
+  content: "\f03e";
 }
-.icon-briefcase:before {
-  content: "\e9ae";
+.icon-picture-o:before {
+  content: "\f03e";
 }
-.icon-checkmark:before {
-  content: "\ea10";
+.icon-arrow-up:before {
+  content: "\f062";
 }
-.icon-mail2:before {
-  content: "\ea84";
+.icon-twitter-square:before {
+  content: "\f081";
 }
-.icon-google-plus:before {
-  content: "\ea8b";
+.icon-camera-retro:before {
+  content: "\f083";
 }
-.icon-facebook2:before {
-  content: "\ea91";
+.icon-cogs:before {
+  content: "\f085";
 }
-.icon-youtube2:before {
-  content: "\ea9e";
+.icon-gears:before {
+  content: "\f085";
 }
-.icon-tumblr:before {
-  content: "\eab9";
+.icon-trophy:before {
+  content: "\f091";
 }
-
+.icon-globe:before {
+  content: "\f0ac";
+}
+.icon-wrench:before {
+  content: "\f0ad";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-github-alt:before {
+  content: "\f113";
+}
+.icon-gamepad:before {
+  content: "\f11b";
+}
+.icon-code-fork:before {
+  content: "\f126";
+}
+.icon-chevron-circle-up:before {
+  content: "\f139";
+}
+.icon-reddit:before {
+  content: "\f1a1";
+}
+.icon-deviantart:before {
+  content: "\f1bd";
+}
+.icon-circle-thin:before {
+  content: "\f1db";
+}
+.icon-cc:before {
+  content: "\f20a";
+}
+.icon-connectdevelop:before {
+  content: "\f20e";
+}
+.icon-leanpub:before {
+  content: "\f212";
+}
+.icon-viacoin:before {
+  content: "\f237";
+}
+.icon-television:before {
+  content: "\f26c";
+}
+.icon-tv:before {
+  content: "\f26c";
+}
+.icon-reddit-alien:before {
+  content: "\f281";
+}
+.icon-usb:before {
+  content: "\f287";
+}
